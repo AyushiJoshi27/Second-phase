@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Status</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section class="graph-block">
+    <div class="credit-wrapper">
+      <h3>My Credit Score</h3>
+      <div class="graph-wrapper">
+        <div class="meter-content"></div>
+        <div class="score"><p><b>821</b></p></div>
+        <div class="status">
+          <b>Your Credit Score is Excellent</b>
+          <p>Updated 31-08-2021</p>
+        </div>
+      </div>
+      <div class="progress-meter">
+        <div class="basic-lvl"><a>300</a></div>
+        <div class="average-lvl"><a>600</a></div>
+        <div class="moderate-lvl"><a>700</a></div>
+        <div class="top-lvl"><a>750</a><a>900</a></div>
+        <div class="pointer"></div>
+      </div>
+    </div>
+    <div class="gross-wrapper">
+      <h3>Yearly Gross Income</h3>
+      <div class="gross-meter">
+        <div class="meter"></div>
+        <div class="meter-content">
+          <div>
+            <p>Yearly Income</p>
+            <b><i class="fa fa-inr" aria-hidden="true"></i>54,00,000</b>
+          </div>
+        </div>
+      </div>
+      <div class="info-wrap">
+        <div class="debt-block">
+          <div class="debt-sign"></div>
+          <p>Debt Payments</p><b>35%</b>
+        </div>
+        <div>
+          <div class="income-sign"></div>
+          <p>Income Remaining</p><b>65%</b>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="status-block">
+    <div class="monthly-bill-status">
+      <div class="head-wrap">
+        <h3>Additional Monthly Payment</h3>
+        <div class="control-block">
+          <i class="fa fa-inr" aria-hidden="true"></i> 0
+          <div class="pay-controller">
+            <button type="button" class="decrement"><i class="fa-solid fa-minus"></i></button>
+            <i class="fa fa-inr" aria-hidden="true"></i>1,42,650
+            <button type="button" class="increment"><i class="fa-solid fa-plus"></i></button>
+          </div>
+        </div>
+        <div class="slide-container">
+          <input type="range" min="1" max="100" value="48" class="slider" id="my-range">
+        </div>
+        <span><i class="fa fa-inr" aria-hidden="true"></i>1,42,650</span>
+        <i class="fas fa-caret-down"></i>
+      </div>
+      <div class="status-wrap">
+        <div class="interst">
+          <p>Interest Saved</p>
+          <p><i class="fa fa-inr" aria-hidden="true"></i>1,42,650</p>
+        </div>
+        <div class="other-status">
+          <div>
+            <p>Additional monthly payment</p>
+            <p><i class="fa fa-inr" aria-hidden="true"></i>5,019</p>
+          </div>
+          <div>
+            <p>Total monthly payments</p>
+            <p><i class="fa fa-inr" aria-hidden="true"></i>1,25,890</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Interest block-->
+    <div class="interest-block">
+      <div class="initial">
+        <div class="saving-account">
+          <p><i class='fas fa-piggy-bank'></i></p>
+          <p>11,25,140</p>
+          <p>Interest Savings</p>
+        </div>
+        <div class="pay-account">
+          <div>
+            <p>Additional Payment</p>
+            <p><i class="fa fa-inr" aria-hidden="true"></i>10,184</p>
+          </div>
+          <div>
+            <p>Total Monthly Payment</p>
+            <p><i class="fa fa-inr" aria-hidden="true"></i>1,17,083</p>
+          </div>
+        </div>
+      </div>
+      <div class="gross">
+        <div class="saving-account">
+          <p><i class='fas fa-piggy-bank'></i></p>
+          <p>16,26,480</p><p>Interest Savings</p>
+        </div>
+        <div class="pay-account">
+          <div>
+            <p>Additional Payment</p>
+            <p><i class="fa fa-inr" aria-hidden="true"></i>15,740</p>
+          </div>
+          <div>
+            <p>Total Monthly Payment</p>
+            <p><i class="fa fa-inr" aria-hidden="true"></i>1,42,650</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--LIC block-->
+    <div class="lic-block">
+      <div class="lic-head">
+        <p>LOAN WITH HIGHEST SAVING POTENTIAL</p>
+        <div class="opt-block">Housing Loan
+          <span>(<i class="fa fa-inr" aria-hidden="true"></i>4,65,700)</span>
+          <i class="fa fa-angle-down"></i>
+        </div>
+        <h3>LIC Housing Finance Ltd</h3>
+      </div>
+      <div class="loan-status-wrapper">
+        <div class="paid-status">
+          <p>Paid</p>
+          <p><i class="fa fa-inr" aria-hidden="true"></i>15,42,740</p>
+        </div>
+        <div class="remain-status">
+          <p>Remaining</p>
+          <p><i class="fa fa-inr" aria-hidden="true"></i>15,42,740</p>
+        </div>
+        <div class="rate-status">
+          <i class="fa fa-percent" aria-hidden="true"></i> 
+          <p>Interest Rate</p>
+          <p>12.6%</p>
+        </div>
+        <div class="monthly-status">
+          <i class="fa fa-calendar"></i> 
+          <p>Monthly Income</p>
+          <p><i class="fa fa-inr" aria-hidden="true"></i>4,65,700</p>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-info"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+</body>
+
+</html>

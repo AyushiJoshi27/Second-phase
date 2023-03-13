@@ -1,0 +1,531 @@
+body {
+  background-color: rgb(234, 235, 238);
+  color: rgb(62, 64, 95);
+  margin: 16px 0 10px 10px;
+  padding: 40px 0 40px 40px;
+}
+body .graph-block {
+  display: inline-block;
+  margin-left: 5px;
+  width: 36%;
+}
+body .graph-block .credit-wrapper,
+body .graph-block .gross-wrapper {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px 2px rgb(217, 217, 217);
+  border-radius: 15px;
+  height: 438px;
+  margin: 15px 20px 30px 15px;
+  padding: 25px;
+}
+body .graph-block .credit-wrapper .graph-wrapper,
+body .graph-block .gross-wrapper .graph-wrapper {
+  height: 362px;
+  margin: 40px 27px -16px;
+  position: relative;
+}
+body .graph-block .credit-wrapper .graph-wrapper .meter-content,
+body .graph-block .gross-wrapper .graph-wrapper .meter-content {
+  background-image: conic-gradient(white 0deg 2deg, rgb(249, 207, 74) 2deg 24deg, white 24deg 26deg, red 28deg 49deg, #ffffff 49deg 51deg, green 51deg 90deg, white 90deg 270deg, rgb(255, 0, 83) 270deg 360deg);
+  border-radius: 50%;
+  height: 100%;
+  margin: 25px auto;
+  width: 100%;
+}
+body .graph-block .credit-wrapper .graph-wrapper .score,
+body .graph-block .gross-wrapper .graph-wrapper .score {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 85px;
+  height: 89.85%;
+  position: absolute;
+  right: 19px;
+  text-align: center;
+  top: 19px;
+  width: 90%;
+}
+body .graph-block .credit-wrapper .graph-wrapper .status,
+body .graph-block .gross-wrapper .graph-wrapper .status {
+  position: absolute;
+  text-align: center;
+  top: 58%;
+  width: 100%;
+}
+body .graph-block .credit-wrapper .graph-wrapper .status b,
+body .graph-block .gross-wrapper .graph-wrapper .status b {
+  font-size: 21px;
+}
+body .graph-block .credit-wrapper .graph-wrapper .status p,
+body .graph-block .gross-wrapper .graph-wrapper .status p {
+  color: rgb(172, 173, 187);
+  font-size: 20px;
+  margin: 8px;
+}
+body .graph-block .credit-wrapper h3,
+body .graph-block .gross-wrapper h3 {
+  font-size: 22px;
+  margin: 0;
+}
+body .graph-block .credit-wrapper .progress-meter,
+body .graph-block .gross-wrapper .progress-meter {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  height: 4px;
+  margin: 10px 0;
+  position: relative;
+  width: 100%;
+}
+body .graph-block .credit-wrapper .progress-meter a,
+body .graph-block .gross-wrapper .progress-meter a {
+  bottom: 18px;
+  color: rgb(172, 173, 187);
+  position: absolute;
+}
+body .graph-block .credit-wrapper .progress-meter a:nth-child(2),
+body .graph-block .gross-wrapper .progress-meter a:nth-child(2) {
+  right: 0;
+}
+body .graph-block .credit-wrapper .progress-meter .basic-lvl,
+body .graph-block .gross-wrapper .progress-meter .basic-lvl {
+  border-radius: 10px;
+  display: inline-block;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(230, 98, 98);
+  width: 44%;
+}
+body .graph-block .credit-wrapper .progress-meter .average-lvl,
+body .graph-block .gross-wrapper .progress-meter .average-lvl {
+  border-radius: 10px;
+  display: inline-block;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(249, 207, 74);
+  left: 45.5%;
+  width: 17%;
+}
+body .graph-block .credit-wrapper .progress-meter .moderate-lvl,
+body .graph-block .gross-wrapper .progress-meter .moderate-lvl {
+  border-radius: 10px;
+  display: inline-block;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(227, 150, 63);
+  left: 63.5%;
+  width: 13%;
+}
+body .graph-block .credit-wrapper .progress-meter .top-lvl,
+body .graph-block .gross-wrapper .progress-meter .top-lvl {
+  border-radius: 10px;
+  display: inline-block;
+  height: 4px;
+  position: absolute;
+  background-color: rgb(100, 211, 140);
+  margin: 0;
+  right: 0;
+  width: 22%;
+}
+body .graph-block .credit-wrapper .progress-meter .pointer,
+body .graph-block .gross-wrapper .progress-meter .pointer {
+  border: 4px solid rgb(100, 211, 140);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  height: 5px;
+  left: 82%;
+  position: absolute;
+  top: -5px;
+  width: 5px;
+}
+body .graph-block .gross-wrapper {
+  height: 376px;
+}
+body .graph-block .gross-wrapper h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+body .graph-block .gross-wrapper .gross-meter {
+  height: 65.5%;
+  margin: 20px auto;
+  width: 61%;
+}
+body .graph-block .gross-wrapper .gross-meter .meter {
+  background-image: linear-gradient(300deg, transparent 50%, rgb(86, 99, 235) 50%), linear-gradient(-25deg, transparent 50%, rgb(86, 99, 235) 50%), linear-gradient(-20deg, transparent 50%, rgb(255, 255, 255) 50%), linear-gradient(62deg, transparent 50%, rgb(246, 199, 101) 50%);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+body .graph-block .gross-wrapper .gross-meter .meter-content {
+  background-color: rgb(255, 255, 255);
+  bottom: 94%;
+  border-radius: 50%;
+  height: 88%;
+  margin: 0px auto;
+  position: relative;
+  width: 88%;
+}
+body .graph-block .gross-wrapper .gross-meter .meter-content div {
+  background: rgb(255, 255, 255);
+  border: 5px dotted rgb(172, 173, 187);
+  border-radius: 50%;
+  height: 71%;
+  position: absolute;
+  right: 13%;
+  text-align: center;
+  top: 13%;
+  width: 70%;
+}
+body .graph-block .gross-wrapper .gross-meter .meter-content div p:first-child {
+  color: rgb(172, 173, 187);
+  margin-bottom: 5px;
+  padding-top: 35px;
+}
+body .graph-block .gross-wrapper .gross-meter .meter-content div b {
+  font-size: 21px;
+}
+body .graph-block .gross-wrapper .info-wrap div {
+  display: inline-block;
+}
+body .graph-block .gross-wrapper .info-wrap div .debt-sign {
+  border-radius: 50%;
+  height: 14px;
+  padding: 0;
+  width: 14px;
+  background-color: rgb(246, 199, 101);
+}
+body .graph-block .gross-wrapper .info-wrap div .income-sign {
+  border-radius: 50%;
+  height: 14px;
+  padding: 0;
+  width: 14px;
+  background-color: rgb(86, 99, 235);
+}
+body .graph-block .gross-wrapper .info-wrap div p {
+  color: rgb(172, 173, 187);
+  display: inline-block;
+  margin: 8px 0;
+}
+body .graph-block .gross-wrapper .info-wrap div b {
+  display: block;
+  font-size: 20px;
+  margin-left: 20px;
+}
+body .graph-block .gross-wrapper .info-wrap .debt-block {
+  padding: 0px 40px 0 40px;
+}
+body section.status-block {
+  float: right;
+  width: 63%;
+}
+body section.status-block .monthly-bill-status {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px 2px rgb(217, 217, 217);
+  border-radius: 15px 0 0 15px;
+  margin: 15px 0 15px;
+}
+body section.status-block .monthly-bill-status .head-wrap {
+  padding: 25px 25px 10px;
+}
+body section.status-block .monthly-bill-status .head-wrap h3 {
+  margin: 0;
+}
+body section.status-block .monthly-bill-status .head-wrap .control-block {
+  margin: 40px 0 10px 0;
+  padding-top: 10px;
+}
+body section.status-block .monthly-bill-status .head-wrap .control-block i {
+  margin-top: 15px;
+}
+body section.status-block .monthly-bill-status .head-wrap .control-block .pay-controller {
+  border: 4px solid rgb(241, 243, 247);
+  border-radius: 10px;
+  color: rgb(130, 138, 240);
+  float: right;
+  font-weight: 600;
+  margin: 0;
+}
+body section.status-block .monthly-bill-status .head-wrap .control-block .pay-controller .decrement {
+  background-color: rgb(255, 255, 255);
+  border-right: 2px solid rgb(241, 243, 247);
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  color: rgb(145, 147, 165);
+  margin-right: 10px;
+  padding: 3px 15px 8px 15px;
+}
+body section.status-block .monthly-bill-status .head-wrap .control-block .pay-controller .increment {
+  background-color: rgb(255, 255, 255);
+  border-left: 2px solid rgb(241, 243, 247);
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  color: rgb(145, 147, 165);
+  margin-left: 10px;
+  padding: 3px 15px 8px 15px;
+}
+body section.status-block .monthly-bill-status .head-wrap .slide-container {
+  margin: 22px 0 25px;
+  width: 100%;
+}
+body section.status-block .monthly-bill-status .head-wrap .slide-container .slider {
+  -webkit-transition: 0.2s;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: linear-gradient(to right, rgb(57, 162, 241) 0%, rgb(103, 226, 154) 47%, rgb(240, 242, 247) 37%, rgb(240, 242, 247) 100%);
+  border-radius: 5px;
+  height: 8px;
+  outline: none;
+  opacity: 0.7;
+  position: relative;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+body section.status-block .monthly-bill-status .head-wrap .slide-container .slider:hover {
+  opacity: 1;
+}
+body section.status-block .monthly-bill-status .head-wrap .slide-container .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 5px solid rgb(103, 226, 154);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+}
+body section.status-block .monthly-bill-status .head-wrap span {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  bottom: 86px;
+  color: rgb(255, 255, 255);
+  left: 39%;
+  position: relative;
+  padding: 14px 35px;
+}
+body section.status-block .monthly-bill-status .head-wrap .fa-caret-down {
+  bottom: 63px;
+  left: 29.5%;
+  position: relative;
+}
+body section.status-block .monthly-bill-status .status-wrap {
+  background-color: rgb(245, 247, 252);
+  border-radius: 0 0 0 15px;
+  height: 75px;
+  padding: 25px;
+}
+body section.status-block .monthly-bill-status .status-wrap .interst {
+  display: inline-block;
+}
+body section.status-block .monthly-bill-status .status-wrap .interst p {
+  color: rgb(140, 142, 160);
+  font-size: 17px;
+  margin: 12px;
+}
+body section.status-block .monthly-bill-status .status-wrap .interst p:nth-child(2) {
+  color: rgb(86, 99, 235);
+  font-size: 27px;
+}
+body section.status-block .monthly-bill-status .status-wrap .other-status {
+  float: right;
+}
+body section.status-block .monthly-bill-status .status-wrap .other-status div {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0px 2px 5px 0 rgb(230, 233, 241);
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px;
+}
+body section.status-block .monthly-bill-status .status-wrap .other-status div p:first-child {
+  color: rgb(140, 142, 160);
+  font-size: 17px;
+  font-weight: 200;
+}
+body section.status-block .monthly-bill-status .status-wrap .other-status div p {
+  font-size: 18px;
+  margin: 6px 12px;
+}
+body section.status-block .interest-block {
+  margin: 30px 0 15px;
+}
+body section.status-block .interest-block .initial,
+body section.status-block .interest-block .gross {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 21px 74px 4px rgb(186, 187, 198);
+  display: inline-block;
+  width: 48.4%;
+}
+body section.status-block .interest-block .initial .saving-account,
+body section.status-block .interest-block .gross .saving-account {
+  text-align: center;
+  padding: 20px;
+}
+body section.status-block .interest-block .initial .saving-account p,
+body section.status-block .interest-block .gross .saving-account p {
+  margin: 15px 0;
+}
+body section.status-block .interest-block .initial .saving-account p .fa-piggy-bank,
+body section.status-block .interest-block .gross .saving-account p .fa-piggy-bank {
+  background-color: rgb(245, 247, 252);
+  border-radius: 50%;
+  color: rgb(90, 195, 117);
+  font-size: 25px;
+  padding: 15px;
+}
+body section.status-block .interest-block .initial .saving-account p:nth-child(2),
+body section.status-block .interest-block .gross .saving-account p:nth-child(2) {
+  color: rgb(90, 195, 117);
+  font-size: 25px;
+  margin-bottom: 0;
+}
+body section.status-block .interest-block .initial .saving-account p:nth-child(3),
+body section.status-block .interest-block .gross .saving-account p:nth-child(3) {
+  color: rgb(159, 161, 175);
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 0;
+}
+body section.status-block .interest-block .initial .pay-account,
+body section.status-block .interest-block .gross .pay-account {
+  border-top: 2px solid rgb(239, 240, 243);
+  display: flex;
+}
+body section.status-block .interest-block .initial .pay-account div,
+body section.status-block .interest-block .gross .pay-account div {
+  padding: 10px 25px;
+  width: 50%;
+}
+body section.status-block .interest-block .initial .pay-account div p,
+body section.status-block .interest-block .gross .pay-account div p {
+  font-size: 15px;
+  margin: 8px 0;
+}
+body section.status-block .interest-block .initial .pay-account div p:first-child,
+body section.status-block .interest-block .gross .pay-account div p:first-child {
+  color: rgb(159, 161, 175);
+  font-weight: 300;
+}
+body section.status-block .interest-block .initial .pay-account div p:nth-child(2),
+body section.status-block .interest-block .gross .pay-account div p:nth-child(2) {
+  font-weight: bold;
+  font-size: 16px;
+}
+body section.status-block .interest-block .initial .pay-account div:first-child,
+body section.status-block .interest-block .gross .pay-account div:first-child {
+  border-right: 2px solid rgb(239, 240, 243);
+}
+body section.status-block .interest-block div.gross {
+  background-color: rgb(251, 251, 252);
+  border-radius: 15px 0 0 15px;
+  box-shadow: 0 5px 10px 2px rgb(217, 217, 217);
+  float: right;
+}
+body section.status-block .interest-block div.gross .saving-account p:first-child,
+body section.status-block .interest-block div.gross .saving-account p:nth-child(2),
+body section.status-block .interest-block div.gross .saving-account .fa-piggy-bank {
+  color: rgb(115, 125, 236);
+}
+body section.status-block .lic-block {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px 0 0 15px;
+  box-shadow: 0 5px 10px 2px rgb(217, 217, 217);
+  margin: 30px 0;
+}
+body section.status-block .lic-block .lic-head {
+  padding: 20px 15px 20px 20px;
+}
+body section.status-block .lic-block .lic-head p {
+  background-color: rgb(246, 237, 223);
+  color: rgb(227, 150, 63);
+  display: inline-block;
+  font-weight: 400;
+  margin: 5px 0;
+  padding: 5px;
+}
+body section.status-block .lic-block .lic-head span {
+  color: rgb(115, 125, 236);
+}
+body section.status-block .lic-block .lic-head h3 {
+  font-size: 31px;
+  margin: 5px 0;
+}
+body section.status-block .lic-block .lic-head .fa-angle-down {
+  padding-left: 40px;
+}
+body section.status-block .lic-block .lic-head .opt-block {
+  border: 2px solid rgb(239, 240, 243);
+  border-radius: 10px;
+  color: rgb(125, 129, 148);
+  float: right;
+  padding: 12px;
+}
+body section.status-block .lic-block .loan-status-wrapper {
+  padding: 25px 20px;
+}
+body section.status-block .lic-block .loan-status-wrapper div {
+  display: inline-block;
+}
+body section.status-block .lic-block .loan-status-wrapper div p:first-of-type {
+  color: rgb(159, 161, 175);
+  margin: 8px 0;
+}
+body section.status-block .lic-block .loan-status-wrapper div .fa-calendar,
+body section.status-block .lic-block .loan-status-wrapper div .fa-percent {
+  border: 2px solid;
+  border-radius: 50%;
+  color: rgb(115, 125, 236);
+  font-size: 16px;
+  padding: 4px 6px;
+  position: absolute;
+  right: 107%;
+  top: 9px;
+}
+body section.status-block .lic-block .loan-status-wrapper .monthly-status,
+body section.status-block .lic-block .loan-status-wrapper .rate-status {
+  position: relative;
+}
+body section.status-block .lic-block .loan-status-wrapper .monthly-status p:nth-child(3),
+body section.status-block .lic-block .loan-status-wrapper .rate-status p:nth-child(3) {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+body section.status-block .lic-block .loan-status-wrapper .paid-status {
+  width: 33%;
+}
+body section.status-block .lic-block .loan-status-wrapper .paid-status p:nth-child(2) {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+body section.status-block .lic-block .loan-status-wrapper .remain-status {
+  width: 30%;
+}
+body section.status-block .lic-block .loan-status-wrapper .remain-status p:nth-child(2) {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+body section.status-block .lic-block .loan-status-wrapper .monthly-status {
+  float: right;
+}
+body section.status-block .lic-block .loan-status-wrapper .progress-bar {
+  background-color: rgb(245, 247, 252);
+  border-radius: 10px;
+  height: 8px;
+  position: relative;
+  width: 45%;
+}
+body section.status-block .lic-block .loan-status-wrapper .progress-bar .progress-info {
+  background-color: rgb(246, 199, 101);
+  border-radius: 10px;
+  height: 8px;
+  position: absolute;
+  width: 33%;
+}/*# sourceMappingURL=style.css.map */
